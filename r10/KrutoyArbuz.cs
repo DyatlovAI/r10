@@ -60,7 +60,6 @@ namespace r10
                 }
                 myStopwatch.Stop();
                 var resultTime = myStopwatch.Elapsed;
-                // elapsedTime - строка, которая будет содержать значение затраченного времени
                 string elapsedTime =
                 String.Format("{0:00}:{1:00}:{2:00}.{3:000}",
                 resultTime.Hours,
@@ -111,7 +110,6 @@ namespace r10
                 }
                 myStopwatch.Stop();
                 var resultTime = myStopwatch.Elapsed;
-                // elapsedTime - строка, которая будет содержать значение затраченного времени
                 string elapsedTime =
                 String.Format("{0:00}:{1:00}:{2:00}.{3:000}",
                 resultTime.Hours,

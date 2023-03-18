@@ -98,11 +98,13 @@ namespace r10
 
         private void button2_Click(object sender, EventArgs e)
         {
-            button2.Enabled = true;
+            button3.Enabled = true;
             listBox1.Items.Clear();
             label4.Text = "";
             label5.Text = "";
             label6.Text = "";
+            ComparativeAnalysis.NumberOfPermutations = 0;
+            ComparativeAnalysis.Comparison = 0;
             Context.array = null;
             this.count = 0;
 
@@ -143,6 +145,19 @@ namespace r10
             {
                 MessageBox.Show("Ошибка! Массив уже сгенерирован. Необходимо очистить старый набор и повторите попытку!");
             }
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            button2.Enabled = true;
+            listBox1.Items.Clear();
+            label4.Text = "";
+            label5.Text = "";
+            label6.Text = "";
+            ComparativeAnalysis.NumberOfPermutations = 0;
+            ComparativeAnalysis.Comparison = 0;
+            Context.array = null;
+            this.count = 0;
         }
     }
 }

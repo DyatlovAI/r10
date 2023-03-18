@@ -50,7 +50,7 @@ namespace r10
             int flag = 0;
             if (!(int.TryParse(textBox1.Text, out flag)))
             {
-                label2.Text = "Ошибка! Введенно некорректное значение";
+                label2.Text = "Введенно некорректное значение";
                 this.Height = 200;
             }
             else if (!(int.Parse(textBox1.Text) > trackBar1.Maximum))
@@ -61,7 +61,7 @@ namespace r10
             }
             else if ((int.Parse(textBox1.Text) > trackBar1.Maximum) || (int.Parse(textBox1.Text) < trackBar1.Minimum))
             {
-                label2.Text = "Ошибка! Введенное значение вышло \nза допустимый интервал";
+                label2.Text = "Введенное значение вышло за допустимый интервал";
                 this.Height = 200;
             }
         }
