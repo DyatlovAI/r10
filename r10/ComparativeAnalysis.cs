@@ -90,7 +90,30 @@ namespace r10
             Sort(1000, 2);
             Sort(10000, 3);
 
+            
+            SortingResultsInformation MaxElement;
+            SortingResultsInformation MinElement;
+            MaxElement = sortingResults[0];
+            for (int i = 0; i < sortingResults.Count; i++)
+            {
+                if (MaxElement.Comparison < sortingResults[i].Comparison)
+                {
+                    MaxElement = sortingResults[i];
+                }
+            }
+            MinElement = sortingResults[0];
+            for (int i = 0; i < sortingResults.Count; i++)
+            {
+                if (MinElement.Comparison > sortingResults[i].Comparison)
+                {
+                    MinElement = sortingResults[i];
+                }
+            }
+            label1.Text = MaxElement.NameSortingMethod + " с количествомсраненений равным " + MaxElement.Comparison + " дает худшие\n показателитрудоемкости сортировки для массива с\n количеством элементов равным " + MaxElement.Volume + ".";
+            label2.Text = MinElement.NameSortingMethod + " с количествомсраненений равным " + MinElement.Comparison + " дает\n лучшие показателитрудоемкости сортировки\n для массива с количеством элементов равным " + MinElement.Volume + ".";
             sortingResults.Clear();
+
+
         }
     }
 }

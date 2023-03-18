@@ -28,7 +28,7 @@ namespace r10
             }
             else
             {
-                this.NameSortingMethod = "Метод быстрой сортировки";
+                this.NameSortingMethod = "Метод Шелла";
             }
             this.TimeSort = TimeSort;
             this.Volume = Volume;
